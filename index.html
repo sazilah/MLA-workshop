@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="css/jquery.mobile.min.css" rel="stylesheet" type="text/css">
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mobile.min.js"></script>
+<script src="js/fungsi.js"></script>
+<script src="js/kira.js"></script>
+
+
+</head>
+
+<body>
+<!--Step 1 aka Page 1 -->
+<div data-role="page" id="page1">
+
+  <div data-role="header" data-position="fixed">
+	<h3>Step 1</h3>
+	
+  </div>
+  <div role="main" class="ui-content">
+	
+	<!--1. Cable Lost -->
+	<div class="ui-field-contain">
+		<label for="cl">Cable Length:</label>
+		<input type="number" name="cl" id="cl" value="0" placeholder="In KM" autofocus />
+	</div>
+	<div id="wl" class="ui-field-contain">
+		<label for="ft">Optical Cable Type:</label>
+		<select name="ft" id="ft" data-native-menu="false">
+			<option>Choose Fiber Type</option>
+			<option value="mm">Multimode</option>
+			<option value="sm">Singlemode</option>
+		</select>
+	</div>
+	<div id="jmm" class="ui-field-contain" style="display: none">
+		<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+			<legend>Atten. dB/KM:</legend>
+				<input type="radio" name="mmwl" id="mm850" value="3.5" />
+				<label for="mm850">850nm</label>
+				<input type="radio" name="mmwl" id="mm1300" value="1.5"/>
+				<label for="mm1300">1300nm</label>
+		</fieldset>
+	</div>
+	<div id="jsm" class="ui-field-contain" style="display: none">
+		<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+			<legend>Atten. dB/KM:</legend>
+				<input type="radio" name="smwl" id="sm1310i" value="1" />
+				<label for="sm1310i">1310nm Indoor</label>
+				<input type="radio" name="smwl" id="sm1310o" value="0.5" />
+				<label for="sm1310o">1310nm Outdoor</label>
+				<input type="radio" name="smwl" id="sm1550i" value="1" />
+				<label for="sm1550i">1550nm Indoor</label>
+				<input type="radio" name="smwl" id="sm1550o" value="0.5" />
+				<label for="sm1550o">1550nm Outdoor</label>
+		</fieldset>
+	</div>
+	<!--
+	<button id="b1" class="ui-btn">Button</button>
+	-->
+	<div data-role="popup" id="popupDialog1" data-dismissible="false" style="max-width:400px;">
+		<div data-role="header">
+		<h1>Result 1 of 4</h1>
+		</div>
+		<div role="main" class="ui-content">
+			<h4 class="ui-title">Fiber Loss At The Operating Wavelength</h4>
+		<h3 id="p1" style="text-align:center">This action cannot be undone.</h3>
+			<a id="tukar" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="back">Change Value</a>
+			<a href="#page2" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Next Step</a>
+		</div>
+	</div>
+	
+	<div data-role="popup" id="popupDialog2">
+
+	</div>
+
+	
+	
+	
+
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h3>Loss Calculator</h3>
+  </div>
+
+</div>
+
+
+<!--Step 2 aka Page 2 -->
+
+<div data-role="page" id="page2"  >
+
+  <div data-role="header" data-position="fixed" data-add-back-btn="true">
+	<h3>Step 2</h3>
+	
+  </div>
+  <div role="main" class="ui-content">
+	
+	<h3>Tunggu Sudir Datang</h3>
+	
+
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h3>Loss Calculator</h3>
+  </div>
+
+</div>
+
+
+</body>
+</html>
+

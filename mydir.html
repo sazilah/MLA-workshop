@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="css/jquery.mobile.min.css" rel="stylesheet" type="text/css">
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mobile.min.js"></script>
+
+
+</head>
+
+<body>
+<!-- Page pertama -->
+<div data-role="page" id="p1">
+	<div data-role="header" data-position="fixed">
+	<h3>Peta Konsep</h3>
+	</div>
+	<div role="main" class="ui-content">
+	<h3>Celik Minda</h3>
+	<p>This course provides students with the knowledge and hands-on practice they need to produce and deliver high-quality animations, interfaces, games and applications specifically designed to take advantage of mobile device capabilities. The course allows a developer with no Flash experience to quickly start improving their mobile workflow using for example jQuery Mobile and iPhone SDK, and to develop applications much faster than with other technologies. The course is task based, with students learning by actually building these applications. Developers will learn how to create applications for existing mobile platforms for example iPhone and Symbian platforms. The course focuses on mobile best practices and students will learn how to build applications that run efficiently on lower powered mobile devices 
+	</p>
+	<img src="img/phone.png" />
+	</div>
+	<div data-role="footer" data-position="fixed">
+	<h3>Nav Bar 1</h3>
+	<div data-role="navbar">
+    <ul>
+       <li><a data-icon="grid" class="ui-btn-active ui-state-persist">Utama</a></li>
+       <li><a href="#p2" data-icon="star" data-transition="turn" data-direction="reverse">Isi</a></li>
+       <li><a href="#p3" data-icon="gear" data-transition="turn" data-direction="reverse">Hubungi</a></li>
+    </ul>
+    </div>
+    </div>
+</div>
+<!-- Page Kedua -->
+<div data-role="page" id="p2">
+  <div data-role="panel" data-display="overlay"id="panel1">
+    <h3>Kandungan </h3>
+  
+	
+	<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+      <h4>Pantulan Cahaya</h4>
+      <ul data-role="listview" data-inset="false">
+        <li><a href="bab1.html" data-icon="gear" data-transition="turn" data-direction="reverse">Pengenalan</a></li>
+        <li>Peraturan</li>
+        <li>Kedudukan</li>
+      </ul>
+    </div>
+  </div>
+	<div data-role="header" data-position="fixed">
+	  <a href="#panel1" data-icon="bars" data-iconpos="notext">Panel</a>
+	  <h3>Cahaya</h3>
+	</div>
+	<div role="main" class="ui-content">
+	<h3>Muka Kedua</h3>
+	<p>This course provides students with the knowledge and hands-on practice they need to produce and deliver high-quality animations, interfaces, games and applications specifically designed to take advantage of mobile device capabilities. The course allows a developer with no Flash experience to quickly start improving their mobile workflow using for example jQuery Mobile and iPhone SDK, and to develop applications much faster than with other technologies. The course is task based, with students learning by actually building these applications. Developers will learn how to create applications for existing mobile platforms for example iPhone and Symbian platforms. The course focuses on mobile best practices and students will learn how to build applications that run efficiently on lower powered mobile devices 
+	</p>
+	</div>
+	<div data-role="footer" data-position="fixed">
+	<h3>Nav Bar 2</h3>
+	<div data-role="navbar">
+    <ul>
+       <li><a href="#p1" data-icon="grid" data-transition="turn" data-direction="reverse">Utama</a></li>
+       <li><a  data-icon="star" class="ui-btn-active ui-state-persist">Isi</a></li>
+       <li><a href="#p3" data-icon="gear" data-transition="turn" data-direction="reverse">Hubungi</a></li>
+    </ul>
+    </div>
+    </div>
+</div>	
+<!-- Page Ketiga -->
+<div data-role="page" id="p3">
+	<div data-role= "header" data-position="fixed">
+	<h3>Page Ketiga</h3>
+	</div>
+	<div role="main" class="ui-content">
+	<h3>Muka Ketiga</h3>
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+	<h3>Nav Bar 3</h3>
+	
+	<div data-role="navbar">
+    <ul>
+       <li><a href="#p1" data-icon="grid" data-transition="turn" data-direction="reverse">Utama</a></li>
+       <li><a href="#p2" data-icon="star" data-transition="turn" data-direction="reverse">Isi</a></li>
+       <li><a data-icon="gear" class="ui-btn-active ui-state-persist">Hubungi</a></li>
+    </ul>
+    </div>
+    </div>
+</div>
+</body>
+</html>
+
